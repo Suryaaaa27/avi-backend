@@ -1,0 +1,65 @@
+{
+  "domain": "DSA",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the difference between an array and a linked list?",
+      "ideal_answer": "An array stores elements in contiguous memory locations and has a fixed size, enabling O(1) random access but costly insertions and deletions in the middle. A linked list stores elements as nodes connected via pointers, allowing dynamic size and efficient insertions and deletions, but only sequential access and extra memory overhead for pointers.",
+      "skills": ["Arrays", "Linked Lists", "Memory Layout"]
+    },
+    {
+      "id": "q2",
+      "text": "Explain the time complexity of binary search.",
+      "ideal_answer": "Binary search works on sorted arrays by repeatedly dividing the search interval in half. At each step it compares the middle element with the target and discards half of the remaining elements. Because the search space halves each time, its time complexity is O(log n).",
+      "skills": ["Searching", "Time Complexity"]
+    },
+    {
+      "id": "q3",
+      "text": "What is a stack and where is it used?",
+      "ideal_answer": "A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle, where insertion and deletion occur only at the top. It is used in function call management, expression evaluation, backtracking algorithms, and undo operations.",
+      "skills": ["Stack", "LIFO", "Use Cases"]
+    },
+    {
+      "id": "q4",
+      "text": "Define a queue and its major operations.",
+      "ideal_answer": "A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. The main operations are enqueue, which inserts an element at the rear, and dequeue, which removes an element from the front. Queues are used in scheduling, buffering, and breadth-first search.",
+      "skills": ["Queue", "FIFO", "Use Cases"]
+    },
+    {
+      "id": "q5",
+      "text": "What is a graph in data structures?",
+      "ideal_answer": "A graph is a non-linear data structure consisting of a set of vertices (nodes) and edges that connect pairs of vertices. Graphs can be directed or undirected, weighted or unweighted, and are used to model networks such as social networks, transportation systems, and communication links.",
+      "skills": ["Graphs", "Modeling Relationships"]
+    },
+    {
+      "id": "q6",
+      "text": "Differentiate between BFS and DFS.",
+      "ideal_answer": "Breadth-First Search (BFS) explores a graph level by level using a queue, making it suitable for finding the shortest path in unweighted graphs. Depth-First Search (DFS) explores as deep as possible along each branch using a stack or recursion, and is useful for tasks like cycle detection and topological sorting.",
+      "skills": ["BFS", "DFS", "Graph Traversal"]
+    },
+    {
+      "id": "q7",
+      "text": "What is hashing and why is it useful?",
+      "ideal_answer": "Hashing is a technique that maps keys to indices in a hash table using a hash function. It enables average-case O(1) time complexity for insertion, deletion, and lookup operations when collisions are handled properly via methods like chaining or open addressing.",
+      "skills": ["Hashing", "Hash Tables"]
+    },
+    {
+      "id": "q8",
+      "text": "Explain the quicksort algorithm and its complexity.",
+      "ideal_answer": "Quicksort is a divide-and-conquer sorting algorithm that selects a pivot, partitions the array into elements less than and greater than the pivot, and then recursively sorts the partitions. Its average time complexity is O(n log n), but the worst-case complexity is O(n²) if poor pivots are consistently chosen.",
+      "skills": ["Sorting", "Divide and Conquer"]
+    },
+    {
+      "id": "q9",
+      "text": "What is dynamic programming?",
+      "ideal_answer": "Dynamic Programming is an optimization technique used to solve complex problems by breaking them into overlapping subproblems, solving each subproblem once, and storing the results. It typically uses memoization or tabulation to avoid redundant computations.",
+      "skills": ["Dynamic Programming", "Optimization"]
+    },
+    {
+      "id": "q10",
+      "text": "What is Big O notation and why is it important?",
+      "ideal_answer": "Big O notation describes the upper bound of an algorithm’s time or space complexity as the input size grows. It abstracts away constant factors and lower-order terms, allowing us to compare algorithm efficiency and scalability.",
+      "skills": ["Complexity Analysis", "Asymptotic Notation"]
+    }
+  ]
+}

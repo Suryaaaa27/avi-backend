@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AVI — Interview</title>
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark page-fade">
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <header class="container header">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div><h1>AVI</h1><p class="subtitle">Ace every interview — with AI by your side.</p></div>
+    </div>
+    <div class="actions">
+      <a class="btn ghost" href="./index.html">Home</a>
+      <button id="toggleTheme" class="btn ghost small">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card glass">
+      <h2>Interview Setup</h2>
+      <form id="setupForm" class="grid">
+        <div class="field">
+          <label>Email</label>
+          <input id="email" type="email" placeholder="you@domain.com" required/>
+        </div>
+        <div class="field">
+          <label>Interview ID</label>
+          <input id="interviewId" type="text" placeholder="INT-2025-001" required/>
+        </div>
+        <div class="field">
+          <label>Domain</label>
+          <select id="domain" required>
+            <option value="webdev">Web Dev</option>
+            <option value="dsa">DSA</option>
+            <option value="aiml">AI/ML</option>
+            <option value="hr">HR</option>
+            <option value="commerce">Commerce</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Optional typed answer</label>
+          <textarea id="typedAnswer" rows="3" placeholder="You can also answer verbally below."></textarea>
+        </div>
+        <div class="controls">
+          <button id="btnGo" type="button" class="btn primary glow">Enter Interview</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="panel" class="card glass hidden">
+      <div class="panel-header">
+        <h3>Live Interview</h3>
+        <div class="status-dot" id="recStatus">Idle</div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel-left">
+          <div class="video-wrap">
+            <video id="camPreview" autoplay playsinline muted></video>
+            <canvas id="videoCanvas" class="hidden"></canvas>
+          </div>
+          <div class="meters">
+            <div class="meter">
+              <span>Audio Level</span>
+              <div class="bar"><div id="audioLevel" class="bar-fill"></div></div>
+            </div>
+            <div class="meter">
+              <span>Timer</span>
+              <div id="timer" class="timer">00:00</div>
+            </div>
+          </div>
+          <div class="control-row">
+            <button id="btnStartRec" class="btn success">Start Recording</button>
+            <button id="btnStopRec" class="btn danger" disabled>Stop Recording</button>
+            <button id="btnSnap" class="btn ghost">Face Snapshot</button>
+          </div>
+        </div>
+
+        <div class="panel-right">
+          <div class="qa grid-one">
+            <label>Question</label>
+            <div id="questionBox" class="question">Answer verbally. You can optionally type below.</div>
+
+            <label>Your typed answer</label>
+            <textarea id="answerText" rows="6"></textarea>
+
+            <div class="control-row">
+              <button id="btnAnalyze" class="btn primary glow" disabled>Analyze & Generate Feedback</button>
+            </div>
+            <div id="status" class="muted small"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted small">© 2025 • AVI</p>
+  </footer>
+
+  <script src="./scripts/recorder.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => window.AVI.initInterviewPage());
+
+    // Theme Toggle
+    const toggleBtn = document.getElementById('toggleTheme');
+    const body = document.body;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    body.classList.toggle('light', savedTheme === 'light');
+    toggleBtn.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('light');
+      const isDark = !body.classList.contains('light');
+      toggleBtn.textContent = isDark ? '🌙' : '☀️';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

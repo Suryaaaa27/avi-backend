@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AVI — Upload & Analyze</title>
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark page-fade">
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <header class="container header">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div><h1>AVI</h1><p class="subtitle">upload & analyze</p></div>
+    </div>
+    <div class="actions">
+      <a class="btn ghost" href="./index.html">Home</a>
+      <button id="toggleTheme" class="btn ghost">Dark</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card glass">
+      <h2>Manual Upload</h2>
+      <form id="uploadForm" class="grid">
+        <div class="field">
+          <label>Email</label>
+          <input id="email" type="email" placeholder="you@domain.com" required/>
+        </div>
+        <div class="field">
+          <label>Interview ID</label>
+          <input id="interviewId" type="text" placeholder="INT-2025-002" required/>
+        </div>
+        <div class="field">
+          <label>Domain</label>
+          <select id="domain" required>
+            <option value="webdev">Web Dev</option>
+            <option value="dsa">DSA</option>
+            <option value="aiml">AI/ML</option>
+            <option value="hr">HR</option>
+            <option value="commerce">Commerce</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Question ID</label>
+          <input id="questionId" type="text" placeholder="q1" required/>
+        </div>
+
+        <div class="field">
+          <label>Audio file (webm/mp3/wav)</label>
+          <input id="audioFile" type="file" accept="audio/*"/>
+        </div>
+        <div class="field">
+          <label>Video file (webm/mp4)</label>
+          <input id="videoFile" type="file" accept="video/*"/>
+        </div>
+        <div class="field full">
+          <label>Optional typed/transcribed answer</label>
+          <textarea id="textAnswer" rows="4" placeholder="Paste/Type your answer"></textarea>
+        </div>
+        <div class="controls">
+          <button id="btnAnalyzeUpload" type="button" class="btn primary glow">Analyze & Generate Feedback</button>
+        </div>
+      </form>
+      <div id="status" class="muted small"></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted small">© 2025 • AVI</p>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => window.AVI.initUploadPage());
+  </script>
+</body>
+</html>

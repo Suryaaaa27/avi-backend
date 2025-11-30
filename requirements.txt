@@ -1,0 +1,11 @@
+Flask==3.0.3
+Flask-Cors==4.0.0
+pymongo==4.6.1
+python-dotenv==1.0.1
+numpy==1.26.4
+requests==2.31.0
+scikit-learn==1.4.2
+pydub==0.25.1
+ffmpeg-python==0.2.0
+gunicorn==21.2.0
+# (Optional: omit werkzeug pinning to avoid conflicts)

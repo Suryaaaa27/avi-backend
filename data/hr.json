@@ -1,0 +1,65 @@
+{
+  "domain": "HR",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Tell me about yourself.",
+      "ideal_answer": "A strong answer briefly covers your background, key skills, relevant experiences, and what you are looking for next. It should be structured, concise, and aligned with the role rather than a full personal biography.",
+      "skills": ["Self-Introduction", "Communication", "Relevance"]
+    },
+    {
+      "id": "q2",
+      "text": "What are your strengths?",
+      "ideal_answer": "A good response identifies 2–3 genuine strengths such as problem-solving, teamwork, or ownership and supports each with a specific example that shows impact rather than just adjectives.",
+      "skills": ["Self-Awareness", "Strengths", "Examples"]
+    },
+    {
+      "id": "q3",
+      "text": "Where do you see yourself in 5 years?",
+      "ideal_answer": "The answer should reflect realistic career growth, continuous learning, and increasing responsibility, while staying aligned with the company’s domain or role rather than vague or unrelated ambitions.",
+      "skills": ["Goal Setting", "Long-Term Vision"]
+    },
+    {
+      "id": "q4",
+      "text": "What motivates you?",
+      "ideal_answer": "A strong answer mentions intrinsic motivators such as learning, solving challenging problems, contributing to impact, or collaborating with good teams, backed by brief real examples.",
+      "skills": ["Motivation", "Values"]
+    },
+    {
+      "id": "q5",
+      "text": "Do you prefer teamwork or individual work?",
+      "ideal_answer": "Balanced responses highlight comfort in both modes: enjoying collaboration and knowledge sharing in teams, while also being capable of working independently with accountability when needed.",
+      "skills": ["Teamwork", "Independence", "Collaboration"]
+    },
+    {
+      "id": "q6",
+      "text": "Why should we hire you?",
+      "ideal_answer": "The candidate should connect their skills, experiences, and achievements directly to the role’s requirements and explain how they can add value to the team and organization better than an average applicant.",
+      "skills": ["Value Proposition", "Position Fit"]
+    },
+    {
+      "id": "q7",
+      "text": "How do you handle stress or pressure?",
+      "ideal_answer": "A good answer mentions practical strategies such as prioritization, planning, taking short breaks, communicating early about blockers, and staying solution-focused, ideally with a brief example of a stressful situation handled well.",
+      "skills": ["Stress Management", "Resilience"]
+    },
+    {
+      "id": "q8",
+      "text": "Describe a challenge you solved.",
+      "ideal_answer": "The answer should follow the STAR format: explain the Situation, Task, Actions taken, and Result. It should highlight problem-solving, ownership, and what you learned from the experience.",
+      "skills": ["Problem Solving", "STAR Format", "Ownership"]
+    },
+    {
+      "id": "q9",
+      "text": "How do you handle conflicts in a team?",
+      "ideal_answer": "A strong response shows that you stay calm, listen to all perspectives, communicate respectfully, focus on the root cause, and work towards a mutually acceptable solution rather than escalating the conflict.",
+      "skills": ["Conflict Resolution", "Communication"]
+    },
+    {
+      "id": "q10",
+      "text": "Why do you want this job?",
+      "ideal_answer": "The candidate should connect their interests, skills, and values with the role and company, showing that they have researched the organization and see this job as a meaningful next step in their growth.",
+      "skills": ["Role Fit", "Company Research"]
+    }
+  ]
+}

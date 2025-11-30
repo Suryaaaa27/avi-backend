@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AVI — Dashboard</title>
+
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark page-fade">
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <header class="container header">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div>
+        <h1>AVI</h1>
+        <p class="subtitle">feedback dashboard</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn ghost" href="./index.html">Home</a>
+      <button id="toggleTheme" class="btn ghost">Dark</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card glass">
+
+      <div class="panel-header">
+        <h3>Final Feedback</h3>
+        <div id="qualRating" class="pill">—</div>
+      </div>
+
+      <div class="grid cards-2">
+        <div class="mini-card">
+          <div class="mini-label">Final Score</div>
+          <div id="finalScore" class="mini-value">—</div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-label">Interview</div>
+          <div id="meta" class="mini-value small">—</div>
+        </div>
+      </div>
+
+      <div class="grid cards-2">
+        <div class="mini-card">
+          <div class="mini-label">NLP</div>
+          <div id="nlpBox" class="mini-pre"></div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-label">Tone</div>
+          <div id="toneBox" class="mini-pre"></div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-label">Emotion</div>
+          <div id="emotionBox" class="mini-pre"></div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-label">Posture</div>
+          <div id="postureBox" class="mini-pre"></div>
+        </div>
+      </div>
+
+      <article id="feedbackText" class="feedback" style="margin-top:14px;">—</article>
+
+      <div class="control-row end" style="margin-top:12px;">
+        <button id="btnNew" class="btn ghost">New Interview</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="muted small">© 2025 • AVI</p>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/dashboard.js"></script>
+</body>
+</html>

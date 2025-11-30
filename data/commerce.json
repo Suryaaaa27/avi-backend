@@ -1,0 +1,65 @@
+{
+  "domain": "Commerce",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is GDP?",
+      "ideal_answer": "Gross Domestic Product (GDP) is the total monetary value of all final goods and services produced within a country's borders during a specific time period, usually a quarter or a year. It is a primary indicator of the size and health of an economy.",
+      "skills": ["Macroeconomics", "National Income"]
+    },
+    {
+      "id": "q2",
+      "text": "Explain the concepts of demand and supply.",
+      "ideal_answer": "Demand represents the quantity of a good or service that consumers are willing and able to purchase at different price levels, while supply represents the quantity producers are willing and able to offer at those prices. The interaction of demand and supply determines market equilibrium price and quantity.",
+      "skills": ["Microeconomics", "Market Forces"]
+    },
+    {
+      "id": "q3",
+      "text": "What is a balance sheet?",
+      "ideal_answer": "A balance sheet is a financial statement that shows a company's financial position at a specific point in time. It lists assets, liabilities, and shareholders' equity, following the equation: Assets = Liabilities + Equity.",
+      "skills": ["Financial Statements", "Accounting Basics"]
+    },
+    {
+      "id": "q4",
+      "text": "Define inflation and its impact.",
+      "ideal_answer": "Inflation is the sustained increase in the general price level of goods and services over time, leading to a decrease in the purchasing power of money. High inflation can erode savings and create uncertainty, while moderate inflation is often associated with growing economies.",
+      "skills": ["Macroeconomics", "Price Level"]
+    },
+    {
+      "id": "q5",
+      "text": "What is the difference between direct tax and indirect tax?",
+      "ideal_answer": "A direct tax is levied directly on an individual's or organization's income or wealth, such as income tax and corporate tax, and cannot be shifted to others. An indirect tax is levied on the consumption of goods and services, such as GST or VAT, and is usually passed on to consumers in the form of higher prices.",
+      "skills": ["Taxation", "Public Finance"]
+    },
+    {
+      "id": "q6",
+      "text": "What is a debit note and when is it used?",
+      "ideal_answer": "A debit note is a document issued by a buyer to a seller indicating that the buyer is debiting the supplier's account. It is usually used when goods are returned, found defective, or when there is a need to adjust the invoiced amount downward.",
+      "skills": ["Accounting Documents", "Purchasing"]
+    },
+    {
+      "id": "q7",
+      "text": "What is depreciation?",
+      "ideal_answer": "Depreciation is the systematic allocation of the cost of a tangible fixed asset over its useful life. It reflects wear and tear, obsolescence, or usage of the asset and is recorded as an expense in the profit and loss account.",
+      "skills": ["Accounting", "Fixed Assets"]
+    },
+    {
+      "id": "q8",
+      "text": "Define working capital.",
+      "ideal_answer": "Working capital is the difference between current assets and current liabilities. It represents the short-term liquidity available to a business to meet its day-to-day operational expenses.",
+      "skills": ["Finance", "Liquidity Management"]
+    },
+    {
+      "id": "q9",
+      "text": "What is equity in the context of business finance?",
+      "ideal_answer": "Equity represents the ownership interest in a business after all liabilities are deducted from total assets. It can include share capital, retained earnings, and reserves and reflects the residual claim of owners on the company’s assets.",
+      "skills": ["Equity", "Capital Structure"]
+    },
+    {
+      "id": "q10",
+      "text": "What is cash flow and why is it important?",
+      "ideal_answer": "Cash flow refers to the movement of money into and out of a business over a period of time. Positive cash flow ensures that a company can pay its expenses, invest in growth, and meet its financial obligations, making it a critical indicator of financial health.",
+      "skills": ["Cash Flow Management", "Financial Health"]
+    }
+  ]
+}

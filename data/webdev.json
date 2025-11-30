@@ -1,0 +1,65 @@
+{
+  "domain": "Web Development",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Explain how the web browser renders a webpage from HTML, CSS, and JavaScript.",
+      "ideal_answer": "The browser parses HTML to build the DOM tree and parses CSS to build the CSSOM. It then combines them into a render tree, performs layout to compute positions and sizes of elements, and finally paints pixels on the screen. JavaScript can manipulate the DOM and CSSOM, triggering reflows and repaints when the structure or styles change.",
+      "skills": ["Rendering Pipeline", "DOM", "CSSOM"]
+    },
+    {
+      "id": "q2",
+      "text": "What is the difference between LocalStorage and SessionStorage?",
+      "ideal_answer": "Both LocalStorage and SessionStorage are key-value storage mechanisms available in the browser and are synchronous. LocalStorage persists data even after the browser or tab is closed, until it is explicitly cleared. SessionStorage is scoped to a single tab or window and is cleared when that tab or window is closed.",
+      "skills": ["Web Storage", "Client-Side State"]
+    },
+    {
+      "id": "q3",
+      "text": "Define the event loop in JavaScript.",
+      "ideal_answer": "The event loop is the mechanism that allows JavaScript, which is single-threaded, to handle asynchronous operations. It continuously checks the call stack and the task/microtask queues, pushing callbacks onto the stack when it is empty, enabling non-blocking I/O and timers.",
+      "skills": ["Event Loop", "Asynchronous JS"]
+    },
+    {
+      "id": "q4",
+      "text": "What are some semantic elements introduced in HTML5 and why are they useful?",
+      "ideal_answer": "HTML5 introduced elements like header, footer, article, section, nav, and aside. These tags describe the meaning of content, improving accessibility, SEO, and code readability by providing structure instead of relying only on generic div elements.",
+      "skills": ["HTML5", "Semantics", "Accessibility"]
+    },
+    {
+      "id": "q5",
+      "text": "Explain the concept of a REST API with an example.",
+      "ideal_answer": "A REST API is an architectural style that uses standard HTTP methods such as GET, POST, PUT, and DELETE to perform operations on resources identified by URLs. For example, GET /users retrieves a list of users, while POST /users creates a new user. REST is stateless and often returns JSON responses.",
+      "skills": ["REST", "HTTP Methods", "APIs"]
+    },
+    {
+      "id": "q6",
+      "text": "What is Responsive Web Design and how do we achieve it?",
+      "ideal_answer": "Responsive Web Design aims to make web pages look good and usable on different screen sizes and devices. It is typically achieved using fluid layouts, relative units like %, em, rem, vw, CSS media queries, and responsive images.",
+      "skills": ["Responsive Design", "CSS", "Media Queries"]
+    },
+    {
+      "id": "q7",
+      "text": "What is the difference between a class selector and an ID selector in CSS?",
+      "ideal_answer": "An ID selector (#id) is meant to be unique per page and has higher specificity, while a class selector (.class) can be reused across multiple elements and provides more flexibility. Overusing IDs can lead to specificity issues in larger stylesheets.",
+      "skills": ["CSS", "Selectors", "Specificity"]
+    },
+    {
+      "id": "q8",
+      "text": "Define CORS in web applications.",
+      "ideal_answer": "CORS (Cross-Origin Resource Sharing) is a security mechanism that allows a server to specify which origins are permitted to access its resources. It relies on HTTP headers like Access-Control-Allow-Origin and may involve preflight OPTIONS requests for non-simple requests.",
+      "skills": ["Security", "CORS", "HTTP Headers"]
+    },
+    {
+      "id": "q9",
+      "text": "Explain debouncing and throttling in JavaScript.",
+      "ideal_answer": "Debouncing ensures a function is called only after a specified period of inactivity, useful for events like search input. Throttling ensures a function executes at most once in a given interval, even if the event is triggered repeatedly, useful for scroll or resize handlers.",
+      "skills": ["Performance", "Event Handling"]
+    },
+    {
+      "id": "q10",
+      "text": "What is the difference between Server-Side Rendering (SSR) and Client-Side Rendering (CSR)?",
+      "ideal_answer": "In Server-Side Rendering, HTML is generated on the server for each request and sent to the browser, resulting in a fast first paint and good SEO. In Client-Side Rendering, the server sends a minimal HTML shell and JavaScript builds the UI in the browser, leading to heavier initial loads but smoother subsequent navigation.",
+      "skills": ["SSR", "CSR", "Rendering Strategies"]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "domain": "AIML",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Define Machine Learning.",
+      "ideal_answer": "Machine Learning is a field of Artificial Intelligence where systems learn patterns from data to make decisions or predictions without being explicitly programmed. It focuses on generalizing from past observations to handle unseen data.",
+      "skills": ["ML Basics", "Generalization", "AI vs ML"]
+    },
+    {
+      "id": "q2",
+      "text": "What is the difference between supervised and unsupervised learning?",
+      "ideal_answer": "Supervised learning trains models on labeled datasets to predict known outcomes such as in classification and regression. Unsupervised learning works on unlabeled data to discover hidden patterns or structures, commonly through clustering and dimensionality reduction.",
+      "skills": ["Learning Paradigms", "Classification", "Clustering"]
+    },
+    {
+      "id": "q3",
+      "text": "What is overfitting in Machine Learning?",
+      "ideal_answer": "Overfitting occurs when a model learns noise and specific details from training data instead of general patterns, resulting in poor performance on new, unseen data. It often indicates an overly complex model or insufficient regularization.",
+      "skills": ["Generalization", "Bias-Variance", "Model Evaluation"]
+    },
+    {
+      "id": "q4",
+      "text": "Explain neural networks.",
+      "ideal_answer": "Neural networks are computational models inspired by the human brain. They consist of layers of interconnected neurons that transform inputs through learned weights and activation functions, allowing them to approximate complex non-linear relationships in data.",
+      "skills": ["Deep Learning", "Representation Learning"]
+    },
+    {
+      "id": "q5",
+      "text": "What is accuracy in the context of classification?",
+      "ideal_answer": "Accuracy is the ratio of correctly predicted samples to the total number of samples. It is useful when classes are balanced, but can be misleading for imbalanced datasets where other metrics like precision, recall, or F1-score are more informative.",
+      "skills": ["Classification Metrics"]
+    },
+    {
+      "id": "q6",
+      "text": "What is a confusion matrix?",
+      "ideal_answer": "A confusion matrix is a table summarizing a classification model’s performance by showing true positives, true negatives, false positives, and false negatives. It forms the basis for derived metrics like precision, recall, F1-score, and specificity.",
+      "skills": ["Evaluation Metrics", "Model Performance"]
+    },
+    {
+      "id": "q7",
+      "text": "Differentiate between precision and recall.",
+      "ideal_answer": "Precision is the proportion of correctly predicted positive samples among all predicted positives, while recall is the proportion of correctly predicted positives among all actual positive samples. They are often balanced using the F1-score, especially in imbalanced datasets.",
+      "skills": ["Precision", "Recall", "F1"]
+    },
+    {
+      "id": "q8",
+      "text": "What is gradient descent?",
+      "ideal_answer": "Gradient Descent is an iterative optimization algorithm that updates model parameters in the direction of the negative gradient of the loss function. Its goal is to minimize the loss. Variants include Stochastic Gradient Descent, Mini-batch GD, Momentum, RMSProp, and Adam.",
+      "skills": ["Optimization", "Loss Minimization"]
+    },
+    {
+      "id": "q9",
+      "text": "Explain the role of activation functions in neural networks.",
+      "ideal_answer": "Activation functions such as ReLU, Sigmoid, and Tanh introduce non-linearity into neural networks, enabling them to model complex patterns. They also influence gradient flow, convergence speed, and the likelihood of issues like vanishing or exploding gradients.",
+      "skills": ["Activation Functions", "Non-linearity"]
+    },
+    {
+      "id": "q10",
+      "text": "What is a loss function?",
+      "ideal_answer": "A loss function measures how far the model’s predictions are from the actual target values. Training aims to minimize this loss. Common examples include Mean Squared Error for regression and Cross-Entropy loss for classification problems.",
+      "skills": ["Loss Function", "Optimization"]
+    }
+  ]
+}
