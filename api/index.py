@@ -1,4 +1,6 @@
+# api/index.py
+
 from app import app
 
-# Vercel looks for "app" or "handler"
-handler = app
+def handler(request, context):
+    return app(request, context)
