@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: avi-backend
-    env: python
-    runtime: python
-    pythonVersion: 3.10.12   # <---- THIS IS THE FIX
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"

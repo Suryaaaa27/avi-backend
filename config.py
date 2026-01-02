@@ -40,12 +40,12 @@ class Config:
     # File System Paths
     # ----------------------------------------------------------------------
     BASE_DIR = os.getcwd()
-    UPLOAD_FOLDER = os.path.join(BASE_DIR, "backend", "uploads")
-    LOG_FOLDER = os.path.join(BASE_DIR, "backend", "logs")
+    UPLOAD_FOLDER = "/tmp/uploads"
+    LOG_FOLDER = "/tmp/logs"
+
 
 
 # Ensure folders exist
-os.makedirs(Config.UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(Config.LOG_FOLDER, exist_ok=True)
 
 class Config:
